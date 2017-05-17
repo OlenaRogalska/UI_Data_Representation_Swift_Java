@@ -1,0 +1,35 @@
+A.
+Our two added features will be 
+	1) Choose what countries are graphed: the program starts with displaying window "Country options"
+	 with the checkbox for each possible country from the file, a vertical scroll bar and submit button in it. 
+	 The options are the country names from the given excel file.
+	 By checking countries and clicking "submit" user triggers new window displaying "Cellular Graph" that contains
+	 a GraphOverOver panel and a Legend panel. The panels display information about countries chosen in checkbox.
+	
+	2) When the user hovers over any point plotted for a country, the data (year,subscriptions) will be displayed
+	   to the right of that point
+	   
+The user will become aware of the two features in this way:
+
+	1) The user will be prompted to check the countries he/she wants before the program proceeds
+	2) A prompt "Hover over any point to see data values" will appear at the top left of the graph
+	   until the first mouse movement is detected in the panel
+	   
+The classes will be named:
+	GraphHoverOver.java - creates the graph panel and tracks mouse movements
+	SelectionBox.java - shows the list of countries and allows user to check which ones should be graphed
+	
+	
+StoryBoard:
+
+See feature1.jpg
+A vertically scrollable pane with the list of countries with a checkbox next to each.
+A submit button will be pressed by the user, the pane will disappear and the program will plot the selected countries.
+
+See feature2.jpg
+
+(1) when the mouse is not touching or clicking any points, there is no data displayed
+(2) when the mouse moves towards a plotted point or clicks near a plotted point (within DISTANCE pixels) the data label is displayed
+(3) when the mouse leaves the area which is DISTANCE pixels from the point, the data label disappears
+
+
